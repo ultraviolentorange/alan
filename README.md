@@ -1,6 +1,6 @@
 # alan 
 
-Alan Turing was an English computer scientist, mathematician, logician, cryptanalyst, 
+Alan Turing was an English computer scientist, mathematician, logician, cryptanalyst, <br>
 philosopher, and theoretical biologist.
 Turing was highly influential in the development of theoretical computer science, 
 providing a formalisation of the concepts of algorithm and computation with the Turing

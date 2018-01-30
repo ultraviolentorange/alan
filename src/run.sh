@@ -1,3 +1,2 @@
-clear
-g++ *.cpp -o main_process
-./main_process qwerty
+g++ src/*.cpp -o main_process
+src/./main_process CLYFOHYKWHZZDVYK --dictionary dict.txt

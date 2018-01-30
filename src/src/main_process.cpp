@@ -92,7 +92,7 @@ int main(int argc, const char** argv) {
 		exit(0); 
 	}
 	
-	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top;
+	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key;
 
 	int i = 1;
 	while (i < argc) {
@@ -101,6 +101,7 @@ int main(int argc, const char** argv) {
 		if (parse_argument(argc, argv, i, "--logfile", "-L", logfile)) continue;
 		if (parse_argument(argc, argv, i, "--type", "-T", encryption_method)) continue;
 		if (parse_argument(argc, argv, i, "--top", "-N", displayed_top)) continue;
+		if (parse_argument(argc, argv, i, "--key", "-K", cipher_key)) continue;
 		
 		if (!ciphertext.empty()) ciphertext += " ";
 		ciphertext += (std::string)argv[i];
@@ -112,7 +113,7 @@ int main(int argc, const char** argv) {
 	ensure(is_valid_displayed_top(displayed_top), INVALID_ARGUMENTS_MESSAGE);
 	ensure(is_valid_ciphertext(ciphertext), INVALID_CIPHERTEXT_MESSAGE); 
 
-	configure(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top);
+	configure(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key);
 
 	start();
 

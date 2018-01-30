@@ -12,10 +12,11 @@
 #include <cstring>
 #include <fstream>
 #include <iostream>
+#include <unistd.h>
 
 void start() {	
-	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top;
-	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top);
+	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key;
+	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key);
 
 	std::cout << "\033[2J\033[1;1H";
 	std::ifstream ascii_art_file("ascii_art.txt");
@@ -64,6 +65,8 @@ void start() {
 
 	std::cout << "\n";
 
+	usleep(500000);
+
 	std::ofstream log(logfile);
 
 	if (encryption_method.empty() || encryption_method == "caesar") {
@@ -77,6 +80,7 @@ void start() {
 		}
 	}
 	std::cout << "\n";
+	usleep(100000);
 
 	if (encryption_method.empty() || encryption_method == "affine") {
 		const int candidates_before = candidates_count();
@@ -89,6 +93,7 @@ void start() {
 		}
 	}
 	std::cout << "\n";
+	usleep(100000);
 
 	int top = 100;
 	if (!displayed_top.empty()) {

@@ -9,7 +9,7 @@
 #include <fstream>
 #include <map>
 
-std::map<char, int> trie[50000]; 
+std::map<char, int> trie[9000000]; 
 
 int trie_nodes = 1;
 
@@ -24,8 +24,8 @@ int trie_go(int node, char c) {
 
 bool tree_built = false;
 void build_trie() {
-	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top;
-	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top);
+	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key;
+	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key);
 
 	std::ifstream dictionary(dictionary_file);
 	std::string word;

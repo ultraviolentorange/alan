@@ -1,0 +1,15 @@
+--key argument
+
+base2base conversions (including roman)
+reverse
+skytale 
+railfence
+polybios
+alberti
+morse
+vignere
+navajo
+dna/rna
+
+
+

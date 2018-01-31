@@ -23,7 +23,7 @@ void run_affine() {
 	for (int multiplier = 1; multiplier < 26; multiplier++) {
 		for (int shift = 0; shift < 26; shift++) {
 			std::string new_candidate;
-			for (int i = 0; ciphertext[i]; i++) {
+			for (int i = 0; i < (int)ciphertext.size(); i++) {
 				char shifted = ciphertext[i];
 				if ('a' <= ciphertext[i] && ciphertext[i] <= 'z') {
 					shifted = (char)('a' + (multiplier * (ciphertext[i] - 'a') + shift) % 26);

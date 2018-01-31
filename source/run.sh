@@ -1,2 +1,2 @@
-g++ src/*.cpp -o main_process
-./main_process CLYFOHYKWHZZDVYK --dictionary dict.txt
+g++ cpp/*.cpp -o alan
+./alan CLYFOHYKWHZZDVYK --dictionary dict.txt

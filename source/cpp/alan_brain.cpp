@@ -1,9 +1,11 @@
 #include "alan_brain.h"
-#include "caesar.h"
-#include "affine.h"
 
 #include "candidate_handler.h"
 #include "cfg_handler.h"
+
+#include "caesar.h"
+#include "affine.h"
+#include "atbash.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -73,9 +75,9 @@ void start() {
 		run_caesar();
 		const int candidates_after = candidates_count();
 		if (!logfile.empty()) {
-			log << "Successfully generated and added " << candidates_after - candidates_before << " candidates.\n";
+			log << candidates_after - candidates_before << " candidate(s) added.\n";
 		} else {
-			std::cout << candidates_after - candidates_before << " candidates added.\n";
+			std::cout << candidates_after - candidates_before << " candidate(s) added.\n";
 		}
 	}
 	std::cout << "\n";
@@ -86,9 +88,22 @@ void start() {
 		run_affine();
 		const int candidates_after = candidates_count();
 		if (!logfile.empty()) {
-			log << "Successfully generated and added " << candidates_after - candidates_before << " candidates.\n";
+			log << candidates_after - candidates_before << " candidate(s) added.\n";
 		} else {
-			std::cout << candidates_after - candidates_before << " candidates added.\n";
+			std::cout << candidates_after - candidates_before << " candidate(s) added.\n";
+		}
+	}
+	std::cout << "\n";
+	usleep(100000);
+
+	if (encryption_method.empty() || encryption_method == "atbash") {
+		const int candidates_before = candidates_count();
+		run_atbash();
+		const int candidates_after = candidates_count();
+		if (!logfile.empty()) {
+			log << candidates_after - candidates_before << " candidate(s) added.\n";
+		} else {
+			std::cout << candidates_after - candidates_before << " candidate(s) added.\n";
 		}
 	}
 	std::cout << "\n";

@@ -23,7 +23,7 @@ void run_caesar() {
 
 	for (int shift = 1; shift < 26; shift++) {
 		std::string new_candidate;
-		for (int i = 0; ciphertext[i]; i++) {
+		for (int i = 0; i < (int)ciphertext.size(); i++) {
 			char shifted = ciphertext[i];
 			if ('a' <= ciphertext[i] && ciphertext[i] <= 'z') {
 				shifted = (char)('a' + (ciphertext[i] - 'a' + shift) % 26);

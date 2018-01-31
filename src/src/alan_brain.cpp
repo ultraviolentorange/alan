@@ -1,5 +1,4 @@
 #include "alan_brain.h"
-
 #include "caesar.h"
 #include "affine.h"
 
@@ -19,7 +18,7 @@ void start() {
 	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key);
 
 	std::cout << "\033[2J\033[1;1H";
-	std::ifstream ascii_art_file("ascii_art.txt");
+	std::ifstream ascii_art_file("assets/ascii_art.txt");
 	std::string art_line;
 	for (; getline(ascii_art_file, art_line); ) {
 		std::cout << art_line << "\n";

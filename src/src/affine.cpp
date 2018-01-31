@@ -11,7 +11,7 @@
 
 void run_affine() {
 	std::string ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key;
-	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, ciphey_key);
+	load_cfg(ciphertext, dictionary_file, outfile, logfile, encryption_method, displayed_top, cipher_key);
 
 	std::ofstream log(logfile);
 	

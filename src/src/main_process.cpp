@@ -77,13 +77,13 @@ int main(int argc, const char** argv) {
 
 	if (strcmp(argv[1], "--about") == 0 || strcmp(argv[1], "-A") == 0) {
 		std::cout << "\033[2J\033[1;1H";
-		std::ifstream ascii_art_file("ascii_art.txt");
+		std::ifstream ascii_art_file("assets/ascii_art.txt");
 		std::string art_line;
 		for (; getline(ascii_art_file, art_line); ) {
 			std::cout << art_line << "\n";
 		}
 		std::cout << "\n\n";
-		std::ifstream about_file("about.txt");
+		std::ifstream about_file("assets/about.txt");
 		std::string about_line;
 		for (; getline(about_file, about_line); ) {
 			std::cout << about_line << "\n";

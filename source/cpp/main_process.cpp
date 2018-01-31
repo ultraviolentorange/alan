@@ -10,7 +10,7 @@
 #include "cfg_handler.h"
 
 const std::string INVALID_ARGUMENTS_MESSAGE = "Invalid arguments";
-const std::string INVALID_CIPHERTEXT_MESSAGE = "Invalid ciphertext. Requirements: alphanumeric (a-zA-Z0-9), length < 256";
+const std::string INVALID_CIPHERTEXT_MESSAGE = "Invalid ciphertext. Requirements: length < 256";
 
 inline void exit_with_message(const std::string error_message) {
 	std::cout << "Error occured: " << error_message << ".\n";
@@ -39,16 +39,8 @@ inline bool is_valid_displayed_top(const std::string displayed_top) {
 }
 
 inline bool is_valid_ciphertext(const std::string ciphertext) {
-	if ((int)ciphertext.size() > 255) return false;
-
-	for (int i = 0; i < (int)ciphertext.size(); i++) {
-		if ('a' <= ciphertext[i] && ciphertext[i] <= 'z') continue;
-		if ('A' <= ciphertext[i] && ciphertext[i] <= 'Z') continue;
-		if ('0' <= ciphertext[i] && ciphertext[i] <= '9') continue;
-		return false;
-	}
-
-	return true;
+	return (int)ciphertext.size() < 256;
+	
 }
 
 inline bool is_valid_encryption_method(const std::string encryption_method) {

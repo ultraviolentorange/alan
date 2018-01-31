@@ -1,2 +1,2 @@
 g++ cpp/*.cpp -o alan
-./alan CLYFOHYKWHZZDVYK --dictionary dict.txt
+./alan c29sZXRzdGVzdGJhc2VzaXh0eWZvdXI= --dictionary dict.txt

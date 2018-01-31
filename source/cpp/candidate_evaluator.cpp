@@ -8,8 +8,10 @@
 #include <iostream>
 #include <fstream>
 #include <map>
+#include <set>
 
 std::map<char, int> trie[9000000]; 
+std::set<int> terminating;
 
 int trie_nodes = 1;
 
@@ -37,6 +39,7 @@ void build_trie() {
 			} 
 			current_node = trie_go(current_node, word[i]);
 		}
+		terminating.insert(current_node);
 	}
 	tree_built = true;
 	std::ofstream log(logfile);
@@ -70,8 +73,11 @@ int evaluate(std::string candidate) {
 		int current_node = 0;
 		for (int j = i; j < len; j++) {
 			current_node = trie_go(current_node, candidate[j]);
+			if (terminating.find(current_node) != terminating.end()) {
+				res += 10 * std::max(0, j - i - 2);
+			}
 			if (current_node == 0 || j == len - 1) {
-				res += (j - i) * len;
+				res += (j - i);
 				break;
 			}
 		}

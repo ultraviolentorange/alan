@@ -6,6 +6,7 @@
 #include "caesar.h"
 #include "affine.h"
 #include "atbash.h"
+#include "base64.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -108,6 +109,20 @@ void start() {
 	}
 	std::cout << "\n";
 	usleep(100000);
+
+	if (encryption_method.empty() || encryption_method == "base64") {
+		const int candidates_before = candidates_count();
+		run_base64();
+		const int candidates_after = candidates_count();
+		if (!logfile.empty()) {
+			log << candidates_after - candidates_before << " candidate(s) added.\n";
+		} else {
+			std::cout << candidates_after - candidates_before << " candidate(s) added.\n";
+		}
+	}
+	std::cout << "\n";
+	usleep(100000);
+
 
 	int top = 100;
 	if (!displayed_top.empty()) {

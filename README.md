@@ -4,10 +4,8 @@ alan
 ### What alan is
 **alan** is an open-source tool that helps to decrypt texts, encoded using a wide variety of encryption methods. <br>
 Currently supported ciphers: <br>
-* Caesar
-* Affine
-* Atbash
-* Base64
+* Basic substitution ciphers (Caesar, Affine, Atbash)
+* Base to base conversions (Base64)
 
 ### What is special about alan
 It turns out that in most cases when you need to decrypt something you can't know the encryption method for sure. Some are easily distinguishable from the others, however in general case you're supposed to guess and experiment until you get any result. <br>

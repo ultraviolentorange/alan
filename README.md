@@ -40,7 +40,7 @@ The simplest usage example is already provided before. In order to tune <b>alan<
 ```shell
 --T (--type) <method>
 ```
-* Specify how many of the best candidates you want <b>alan</b> to display. Default is 100.
+* Specify how many of the best candidates you want to be displayed. Default is 100.
 ```shell
 --N (--top) <top>
 ```

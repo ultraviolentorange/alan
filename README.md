@@ -24,7 +24,7 @@ In the end, you will be provided with solutions, ordered from best to worst. Thi
 
 The simplest usage example is already provided before. In order to tune <b>alan</b> for your needs, you can call it with arguments.
 <br> <br>
-<h2>Options</h2> <br>
+<b>Options</b> <br>
 * Specify a custom dictionary file for <b>alan</b>. Default is dict.txt which comes together with the files.
 ```shell
 --D (--dictionary) <file>

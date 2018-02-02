@@ -23,8 +23,29 @@ In the end, you will be provided with solutions, ordered from best to worst. Thi
 ### How to use alan
 
 The simplest usage example is already provided before. In order to tune <b>alan</b> for your needs, you can call it with arguments.
-
-* Specify a custom dictionary file for <b>alan</b>.
+<br>
+<b>Options</b> <br>
+* Specify a custom dictionary file for <b>alan</b>. Default is dict.txt which comes together with the files.
 ```shell
---D (--dictionary) 
+--D (--dictionary) <file>
+```
+* Specify a file for candidates output. Default is standard output.  
+```shell
+--O (--outfile) <file>
+```
+* Specify a file for log writing. Default is standard output.
+```shell
+--L (--logfile) <file>
+```
+* If you know the encryption method, you can specify it. Method should be one of {caesar, affine, atbash, base64}. Default is unknown which yields trying all possible options.
+```shell
+--T (--type) <method>
+```
+* Specify how many of the best candidates you want <b>alan</b> to display. Default is 100.
+```shell
+--N (--top) <top>
+```
+* If you know the key used to encrypt, you can specify it. Default is uknown which yields trying all possible options.
+```shell
+--K (--key) <key>
 ```

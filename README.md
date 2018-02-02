@@ -50,7 +50,7 @@ The simplest usage example is already provided before. In order to tune <b>alan<
 --K (--key) <key>
 ```
 <br>
-<b> Example </b>
+<b> Example </b> <br>
 ```shell
 alan albngIA= --outfile plaintext.txt --logfile log.txt --type base64 --top 1 
 ```

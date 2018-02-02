@@ -21,7 +21,6 @@ In short, <b>alan</b> tries all supported encryption methods to decrypt the ciph
 In the end, you will be provided with solutions, ordered from best to worst. This means that if <b>alan</b> succeeded to decrypt the ciphertext, you'll likely find the corresponding plaintext at the top of response. 
 
 ### How to use alan
-
 The simplest usage example is already provided before. In order to tune <b>alan</b> for your needs, you can call it with arguments.
 <br> <br>
 <b>Options</b> <br>
@@ -53,3 +52,19 @@ The simplest usage example is already provided before. In order to tune <b>alan<
 ```shell
 alan albngIA= --outfile plaintext.txt --logfile log.txt --type base64 --top 1 
 ```
+
+### Benchmarks
+Coming soon.
+
+### Inspiration
+<b>Alan Turing</b> was an English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist. 
+Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence. <br>
+Turing played a pivotal role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis in many crucial engagements, including the Battle of the Atlantic, and in so doing helped win the war. <br>
+<br>
+<b>alan</b> was inspired by and named after <b>Alan Turing</b>. <br>
+
+### Credits
+<b>Author<b>: @ultraviolentorange <br>
+<b>GitHub repository</b>: https://github.com/ultraviolentorange/alan <br>
+<b>Contact</b>: ultraviolentorange@gmail.com 
+

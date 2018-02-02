@@ -57,11 +57,9 @@ alan albngIA= --outfile plaintext.txt --logfile log.txt --type base64 --top 1
 Coming soon.
 
 ### Inspiration
-<b>Alan Turing</b> was an English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist. 
+<b>alan</b> was inspired by and named after <b>Alan Turing</b>, who was an English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist. 
 Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence. <br>
-Turing played a pivotal role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis in many crucial engagements, including the Battle of the Atlantic, and in so doing helped win the war. <br>
-<br>
-<b>alan</b> was inspired by and named after <b>Alan Turing</b>. <br>
+Turing played a pivotal role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis in many crucial engagements, including the Battle of the Atlantic, and in so doing helped win the war. 
 
 ### Credits
 <b>Author<b>: @ultraviolentorange <br>

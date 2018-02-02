@@ -64,5 +64,5 @@ Turing played a pivotal role in cracking intercepted coded messages that enabled
 ### Credits
 <b>Author<b>: @ultraviolentorange <br>
 <b>GitHub repository</b>: https://github.com/ultraviolentorange/alan <br>
-<b>Contact</b>: ultraviolentorange@gmail.com 
+<b>Contact</b>: ultraviorange@gmail.com 
 

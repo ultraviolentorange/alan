@@ -44,7 +44,7 @@ The simplest usage example is already provided before. In order to tune <b>alan<
 ```shell
 --N (--top) <top>
 ```
-* If you know the key used to encrypt, you can specify it. Default is uknown which yields trying all possible options.
+* If you know the key used to encrypt, you can specify it. Default is unknown which yields trying all possible options.
 ```shell
 --K (--key) <key>
 ```

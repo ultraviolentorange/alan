@@ -19,3 +19,12 @@ It will do the rest for you, though you can also specify multiple arguments to c
 ### How alan works
 In short, <b>alan</b> tries all supported encryption methods to decrypt the ciphertext and that yields a set of possible solutions. Throughout the whole process <b>alan</b> makes use of a function, evaluating how "good" a solution is. The function is based on a dictionary and is pretty simple to understand. <br>
 In the end, you will be provided with solutions, ordered from best to worst. This means that if <b>alan</b> succeeded to decrypt the ciphertext, you'll likely find the corresponding plaintext at the top of response. 
+
+### How to use alan
+
+The simplest usage example is already provided before. In order to tune <b>alan</b> for your needs, you can call it with arguments.
+
+* Specify a custom dictionary file for <b>alan</b>.
+```shell
+--D (--dictionary) 
+```

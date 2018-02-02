@@ -49,3 +49,8 @@ The simplest usage example is already provided before. In order to tune <b>alan<
 ```shell
 --K (--key) <key>
 ```
+<br>
+<b> Example </b>
+```shell
+alan albngIA= --outfile plaintext.txt --logfile log.txt --type base64 --top 1 
+```
